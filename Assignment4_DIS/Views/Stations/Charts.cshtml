@@ -1,9 +1,10 @@
-﻿
+﻿@model Assignment4_DIS.Models.Stations
+
 @{
     ViewData["Title"] = "Charts";
 }
 
-<h1>Charts for Fuel Station</h1>
+<h1>Showing distance for 5 Gas stations in Tampa</h1>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <div id="chartContainer" class="jumbotron-fluid">
@@ -17,14 +18,14 @@
                     text: "Distance of Fuel Stations",
                     padding: 10
                 },
-                
+
                 axisX: {
                     title: "Station Name",
                     padding: 10
                 },
                 axisY: {
-                    title: "Distance",
-                    padding: 10
+                    title: "Distance in Miles",
+                    padding: 1
                 },
                 padding: {
                     left: 0,
@@ -37,13 +38,14 @@
                     {
                         type: "bar",
                         dataPoints: [
-                            { label: "P1", y: 5 },
-                            { label: "P2", y: 10 },
-                            { label: "P3", y: 20 },
-                            { label: "P5", y: 45 },
-                            { label: "P4", y: 25 }
-                        
-                    ]
+
+                            { label: "CHARGER 01", y: @Model.data.ToArray()[0].distance },
+                            { label: "BROOKE 02", y: @Model.data.ToArray()[1].distance },
+                            { label: "BROOKE 01", y: @Model.data.ToArray()[2].distance },
+                            { label: "BROOKE 03", y: @Model.data.ToArray()[3].distance },
+                            { label: "SUNTRUST STFC #1", y: @Model.data.ToArray()[4].distance },
+                       
+                        ]
                     }
                 ]
             });

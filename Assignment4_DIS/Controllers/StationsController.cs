@@ -49,8 +49,8 @@ namespace Assignment4_DIS.Controllers
 
         public IActionResult Charts()
         {
-
-            return View();
+            var stations = apiHandler.GetStations();
+            return View(stations);
         }
     }
 
