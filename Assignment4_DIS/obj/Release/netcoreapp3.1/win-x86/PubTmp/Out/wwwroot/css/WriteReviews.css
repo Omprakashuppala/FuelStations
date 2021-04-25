@@ -1,0 +1,121 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: black;
+  color: rgb(202, 202, 202);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content {
+  color: rgb(133, 128, 128);
+  font-size: 2vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 7%;
+  padding-top: 6%;
+  width: 50%;
+}
+
+#bodyquote {
+  color: rgb(202, 202, 202);
+  font-size: 1.5vw;
+  width: 150%;
+  margin: 0;
+}
+
+
+.Navbar {
+  overflow: hidden;
+  align-self: auto;
+}
+
+.navlinks {
+  float: left;
+  color: #f2f2f2;
+  margin: 1% 2%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.Navbar a:hover {
+    background-color: rgba(0, 0, 0,0.5);
+    color: black;
+    transition: 0.3s linear;
+}
+
+.Navbar a.active {
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+}
+
+.bodybackground {
+    
+    padding: 2%;
+    background-image: url("logos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    position: static;
+    margin: 0 1% 1% 1%;
+}
+
+.ReviewForm{
+   float: left;
+  color: #f2f2f2;
+  margin: 1% 2%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+table#t02 {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+
+table#t02 tr:nth-child(even) {
+  background-color: #eee;
+  height: 50px;
+  color: black;
+}
+table#t02 tr:nth-child(odd) {
+  background-color: #fff;
+  height: 50px;
+  color: black;
+}
+table#t02 th {
+  background-color: rgb(189, 82, 82);
+  color: black;
+  height: 50px;
+}
+
+.Review{
+
+   height: 100px;
+   width: 900px;
+ }
+
+.submit{
+  height: 30px;
+  width: 100px;
+  background-color: rgb(189, 82, 82) ;
+  color: black;
+  border: 1px solid black;
+ 
+}
+
+.style{
+
+  color: black;
+}
+
+input {
+  height: 25px;
+   width: 900px;
+  margin: 1% 2%;
+}

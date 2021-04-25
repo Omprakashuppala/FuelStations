@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(15, 20, 200);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    align-self: auto;
+    margin: auto;
+}
+
+.navlinks {
+    float: left;
+    color: #f2f2f2;
+    margin: 1% 2%;
+    padding: 6px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Navbar a:hover {
+    background-color: rgba(0, 0, 0,0.5);
+    color: black;
+    transition: 0.3s linear;
+}
+
+.Navbar a.active {
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+}
+
+.navbarright a {
+    float: right;
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.divclass {
+    border: 10px solid rgb(150, 200, 200);
+    width: 90%;
+    padding: 2%;
+    margin: 60px auto;
+    font-family: source sans pro;
+    color: white;
+}
+
+.p01 {
+    font-size: 18px;
+    text-align: left;
+    align-self: auto;
+}
+
+
+.about_ref {
+    float: right;
+    color: #44b175;
+    padding-top: 25%;
+}
+
+.info-div {
+    display: flex;
+    align-items: center;
+    border: 3px solid #bfbfbf;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 24px;
+    line-height: 2;
+    margin: 10px 0px;
+}
+.info-div.about{
+    display:block;
+}
+.info-div h3{
+    margin: 0;
+}
+.info-div h3+p{
+    margin-top: 0;
+}
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+.content h2{
+    color: #fff;
+}
+.info-div p{    
+    padding: 20px;
+    font-size: 14px;
+}
+
+.aboutimage {
+    width: 170px;
+    float: left;
+    margin: 0 2%;
+    border: 1px solid rgb(189, 82, 82);
+    max-width: 12%;
+    padding: 1px;
+    height: 170px;
+}
+
+.dataimage {
+    width: 700px;
+}
+
+.link {
+    color: blue;
+}
+
