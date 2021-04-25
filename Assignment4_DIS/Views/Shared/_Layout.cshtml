@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="~/css/Index.css">
+    <!--<h1>Fuel Station Search web site</h1>-->
+
+    <div class="Navbar" style="background-color: grey !important">
+        <div class="Navbarleft">
+            <a class="navlinks" asp-action="Index" asp-controller="Home">HOME</a>
+            <a class="navlinks" asp-action="Stations" asp-controller="Stations">FUEL STATIONS</a>
+            <a Class="navlinks" asp-action="Maps" asp-controller="Maps">MAPS</a>
+            <a Class="navlinks" asp-controller="Reviews" asp-action="Reviews">REVIEWS</a>
+            <a class="navlinks" asp-controller="AboutUs" asp-action="AboutUs">ABOUT US</a>
+            <a class="navlinks" asp-controller="Stations" asp-action="Charts">CHARTS</a>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

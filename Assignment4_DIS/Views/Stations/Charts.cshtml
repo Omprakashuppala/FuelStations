@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Charts";
+}
+
+<h1>Charts for Fuel Station</h1>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<div id="chartContainer" class="jumbotron-fluid">
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                theme: "light2",
+                animationEnabled: true,
+                title: {
+                    text: "Distance of Fuel Stations",
+                    padding: 10
+                },
+                
+                axisX: {
+                    title: "Station Name",
+                    padding: 10
+                },
+                axisY: {
+                    title: "Distance",
+                    padding: 10
+                },
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 100,
+                    bottom: 0
+                },
+
+                data: [
+                    {
+                        type: "bar",
+                        dataPoints: [
+                            { label: "P1", y: 5 },
+                            { label: "P2", y: 10 },
+                            { label: "P3", y: 20 },
+                            { label: "P5", y: 45 },
+                            { label: "P4", y: 25 }
+                        
+                    ]
+                    }
+                ]
+            });
+            chart.render();
+        };
+    </script>
+</div>
+

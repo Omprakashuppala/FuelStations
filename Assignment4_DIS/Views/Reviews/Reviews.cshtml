@@ -1,0 +1,69 @@
+﻿@model Assignment4_DIS.Models.Reviews
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    @*<title>Fuel Station Search</title>*@
+
+    <link rel="stylesheet" type="text/css" href="~/css/WriteReviews.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500"
+          rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" />
+</head>
+<body>
+    <div class="tab" style="text-align:center;">
+        <form method="post" asp-controller="Reviews" asp-action="AddReview">
+
+            <div>
+                <input class="search1" type="text" placeholder="Write Fuel Station Name" name="name">
+
+                <input class="search2" type="text" placeholder="Write Fuel Station Address" name="address">
+
+                <input class="search1" type="text" placeholder="Write your Name" name="customerName">
+
+                <input class="search2" type="text" placeholder="Write your email id" name="email">
+
+            </div>
+
+            <input class="Review" type="text" placeholder="Write your review here.." name="Review">
+
+            <div>
+                <input class="submit" type="submit" value="Submit">
+
+            </div>
+        </form>
+
+        <br>
+        <table id="t02">
+
+            <tr>
+                <th>Fuel Station Name</th>
+                <th>Address</th>
+                <th>Name</th>
+                <th>Email ID</th>
+                <th>Review</th>
+                <th>Delete Review</th>
+            </tr>
+           @foreach (var d in Model.reviewRecords)
+            {
+        <tr>
+            <td>@d.FuelStation_Name</td>
+            <td>@d.FuelSTation_Address</td>
+            <td>@d.CustomerName</td>
+            <td>@d.Customer_Email</td>
+            <td>@d.Review</td>
+            <td>
+                @using (Html.BeginForm("DeleteReview", "Reviews", FormMethod.Post))
+                {
+                    <button value="@d.Id" name="id"  type="submit" class="submit">Delete</button>
+                }
+             </td>
+        </tr>
+            }
+            </table>
+    </div>
+</body>
+</html>
