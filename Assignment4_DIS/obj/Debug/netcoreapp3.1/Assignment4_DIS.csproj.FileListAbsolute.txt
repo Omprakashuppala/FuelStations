@@ -459,3 +459,4 @@ C:\Users\ompra\OneDrive\Documents\DIS\Assignment4_DIS-master\Assignment4_DIS\obj
 C:\Users\ompra\OneDrive\Documents\DIS\Assignment4_DIS-master\Assignment4_DIS\obj\Debug\netcoreapp3.1\Assignment4_DIS.dll
 C:\Users\ompra\OneDrive\Documents\DIS\Assignment4_DIS-master\Assignment4_DIS\obj\Debug\netcoreapp3.1\Assignment4_DIS.pdb
 C:\Users\ompra\OneDrive\Documents\DIS\Assignment4_DIS-master\Assignment4_DIS\obj\Debug\netcoreapp3.1\Assignment4_DIS.genruntimeconfig.cache
+C:\Users\ompra\OneDrive\Documents\DIS\Assignment4_DIS-master\Assignment4_DIS\obj\Debug\netcoreapp3.1\Razor\Views\Stations\Details.cshtml.g.cs

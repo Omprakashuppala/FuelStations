@@ -1,0 +1,29 @@
+﻿@model Assignment4_DIS.Models.Station
+    <head>
+        <style>
+        p {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            color:black;
+        }
+        </style>
+    </head>
+<h1>Details of  @Model.station_name</h1>
+<body>
+    <div class="tab">
+        <div>
+            <label class="search1"><b>Address</b></label>
+            <p class="card-text">@Model.street_address</p>
+            <label class="search1"><b>ZipCode</b></label>
+            <p class="card-text">@Model.zip</p>
+            <label class="search1"><b>Hours of Operation</b></label>
+            <p class="card-text">@Model.access_days_time</p>
+            <label class="search1"><b>City</b></label>
+            <p class="card-text">@Model.city</p>
+        </div>
+</div>
+</body>

@@ -19,6 +19,7 @@ namespace Assignment4_DIS.Controllers
         static string API_KEY = "&api_key=h3nD00CFqjd6UuNPe3bZj4iStQ2ZEF6WQvbnSwEL";
 
         HttpClient httpClient;
+        Stations publicStations;
 
         private readonly APIHandler apiHandler = new APIHandler();
 
@@ -34,6 +35,7 @@ namespace Assignment4_DIS.Controllers
         public IActionResult Stations()
         {
             var stations = apiHandler.GetStations();
+            ViewBag.location = "tampa";
             return View(stations);
         }
 
@@ -43,7 +45,7 @@ namespace Assignment4_DIS.Controllers
             
             string extension = "&location="+location+"&status=E&access=public&_fields=fuel_stations.station_name";
             var stations = apiHandler.GetStationWithLocation(extension);
-
+            ViewBag.location = location;
             return View("Stations",stations);
         }
 
@@ -51,6 +53,14 @@ namespace Assignment4_DIS.Controllers
         {
             var stations = apiHandler.GetStations();
             return View(stations);
+        }
+        public IActionResult Details(string data)
+        {
+            int rowNumber = int.Parse(data.Split("+")[0]);
+            string location = data.Split("+")[1];
+            string extension = "&location=" + location + "&status=E&access=public&_fields=fuel_stations.station_name";
+            var stations = apiHandler.GetStationWithLocation(extension);
+            return View(stations.data[rowNumber]);
         }
     }
 

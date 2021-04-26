@@ -1,4 +1,6 @@
 ﻿@model Assignment4_DIS.Models.Stations
+@{ int i = -1;}
+@{ string location = ViewBag.location;}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,35 +33,36 @@
                     <th>Fuel Station Name</th>
                     <th>Fuel Type</th>
                     <th>Distance In Miles</th>
-                    <th>Hours Of Operations</th>
-                    <th>Address</th>
-                    <th>City</th>
-                    <th>ZIP</th>
                     <th>State</th>
                     <th>Country</th>
                     <th>Electric Vehicle Pricing</th>
                     <th>Electric Vehicle Network</th>
+                    <th></th>
                     
 
                 </tr>
                 @foreach (var d in Model.data)
                 {
+                  i =i+ 1;
+
             <tr>
                 <td>@d.station_name</td>
                 <td>@d.fuel_type_code</td>
                 <td>@d.distance</td>
-                <td>@d.access_days_time</td>
-                <td>@d.street_address</td>
-                <td>@d.city</td>
-                <td>@d.zip</td>
+               
+               
+                
                 <td>@d.state</td>
                 <td>@d.country</td>
                 <td>@d.ev_pricing</td>
                 <td>@d.ev_network</td>
-                
-
+                <td>
+                    <div class="text-center">
+                        <a asp-controller="Stations" asp-action="Details" asp-route-data=@i+@location>Details</a>
+                    </div>
+                </td>
             </tr>
-
+                   
                 }
               
             </table>
