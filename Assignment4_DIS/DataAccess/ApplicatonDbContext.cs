@@ -20,7 +20,7 @@ namespace Assignment4_DIS.DataAccess
         {
             //string constring = "Server = tcp:fuelstationssearch.database.windows.net,1433; Initial Catalog = FuelStation; Persist Security Info = False; User ID = disadmin; Password =Pnov1411#j; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;";
             //string constring = @"Server=(localdb)\mssqllocaldb;Database=Fuel_DB;Trusted_Connection=True;ConnectRetryCount=0";
-            string constring = @"Server=tcp:fuelserver.database.windows.net,1433;Initial Catalog=fueldatabase;Persist Security Info=False;User ID=omprakash;Password=Sulochana@1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string constring = @"Server=tcp:fuelserver.database.windows.net,1433;Initial Catalog=fueldatabase;Persist Security Info=False;User ID=Testuser;Password=Test@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             return constring;
         }
